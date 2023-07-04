@@ -7,7 +7,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.link-primary {
+.link-primary, .text-primary {
     color: var(--golden-dark) !important;
 }
 
@@ -33,4 +33,8 @@ body {
 
 .welcome h1 {
     font-size: 4.3rem;
+}
+
+.facilities {
+    margin-top: -15rem;
 }
