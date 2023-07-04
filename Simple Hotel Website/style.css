@@ -1,7 +1,24 @@
+:root {
+    --golden-dark: #957554;
+    --golden-light: #DFAA5B;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
 }
 
 .link-primary {
-    color: #957554 !important;
+    color: var(--golden-dark) !important;
+}
+
+.link-primary:hover {
+    color: var(--golden-light) !important;
+}
+
+.bg-primary {
+    background-color: var(--golden-light) !important;
+}
+
+.placeholder {
+    color: gray;
 }

@@ -13,8 +13,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css" />
 
@@ -22,17 +22,17 @@
 </head>
 
 <body>
-    <main class="container text-center">
+    <main class="container-fluid text-center p-0">
         <!-- Logo & Nav -->
         <header>
-            <img class="mt-4 mb-4" src="assets/logo1.png" />
-            
-            <nav class="nav justify-content-center fs-4 fw-bold">
-                <a class="nav-link link-primary ms-2 me-2" href="#">Our Hotel</a>
-                <a class="nav-link link-primary ms-2 me-2" href="#">Rooms & Rates</a>
-                <a class="nav-link link-primary ms-2 me-2" href="#">Facilities</a>
-                <a class="nav-link link-primary ms-2 me-2" href="#">Contact Us</a>
-                <a class="nav-link link-primary ms-2 me-2" href="#">
+            <img class="mt-4 mb-5" src="assets/logo1.png" />
+
+            <nav class="nav justify-content-center fs-4 fw-bold mb-3">
+                <a class="nav-link link-primary mx-2" href="#">Our Hotel</a>
+                <a class="nav-link link-primary mx-2" href="#">Rooms & Rates</a>
+                <a class="nav-link link-primary mx-2" href="#">Facilities</a>
+                <a class="nav-link link-primary mx-2" href="#">Contact Us</a>
+                <a class="nav-link link-primary mx-2" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16">
                         <path
@@ -42,9 +42,47 @@
             </nav>
         </header>
 
-        <!-- Check Availability -->
-        <section>
+        <!-- Room Availability Form -->
+        <section class="bg-dark py-4">
+            <form class="form-group d-flex w-75 m-auto gap-3">
 
+                <!-- City -->
+                <span class="w-100">
+                    <select class="form-select py-3 fw-light placeholder" name="city">
+                        <option value="" selected disabled hidden>Select a City</option>
+                        <option class="text-dark" value="Abuja">Abuja</option>
+                        <option class="text-dark" value="Anambra">Anambra</option>
+                        <option class="text-dark" value="Asaba">Asaba</option>
+                        <option class="text-dark" value="Delta">Delta</option>
+                        <option class="text-dark" value="Ekiti">Ekiti</option>
+                        <option class="text-dark" value="Enugu">Enugu</option>
+                        <option class="text-dark" value="Imo">Imo</option>
+                        <option class="text-dark" value="Kano">Kano</option>
+                        <option class="text-dark" value="Lagos">Lagos</option>
+                        <option class="text-dark" value="Oyo">Oyo</option>
+                        <option class="text-dark" value="Rivers">Rivers</option>
+                    </select>
+                </span>
+
+                <!-- Check In Date -->
+                <span class="w-100">
+                    <input class="form-control py-3 fw-light" name="checkIn" placeholder="Check In" type="text"
+                        value="" />
+                </span>
+
+                <!-- Check Out Date -->
+                <span class="w-100">
+                    <input class="form-control py-3 fw-light" name="checkOut" placeholder="Check Out" type="text"
+                        value="" />
+                </span>
+
+                <!-- Submit -->
+                <span class="w-100">
+                    <button class="btn bg-primary text-light w-100 py-3 fw-light" type="submit">
+                        Check Availability
+                    </button>
+                </span>
+            </form>
         </section>
 
         <!-- Welcome -->
@@ -72,9 +110,11 @@
 
         </footer>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
