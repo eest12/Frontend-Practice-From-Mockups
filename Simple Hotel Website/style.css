@@ -15,10 +15,22 @@ body {
     color: var(--golden-light) !important;
 }
 
-.bg-primary {
+.btn-primary {
     background-color: var(--golden-light) !important;
+    border: none;
 }
 
 .placeholder {
     color: gray;
+}
+
+.welcome {
+    background-image: url("assets/hotel.png");
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+}
+
+.welcome h1 {
+    font-size: 4.3rem;
 }
