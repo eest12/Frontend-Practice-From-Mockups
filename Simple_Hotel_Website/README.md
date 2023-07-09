@@ -6,4 +6,8 @@
 
 A landing page for a hotel website. Done with Bootstrap.
 
-UI mockup by [Oluwatobi Olowu](https://www.figma.com/@oluwatobiolowu) ([Figma Community](https://www.figma.com/community))
+## UI Mockup
+
+Design: [Simple Hotel Website](https://www.figma.com/community/file/1083415571368150554/Simple-Hotel-Website)
+Creator: [Oluwatobi Olowu](https://www.figma.com/@oluwatobiolowu)
+License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
