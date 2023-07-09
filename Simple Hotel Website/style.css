@@ -7,6 +7,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .link-primary, .text-primary {
     color: var(--golden-dark) !important;
 }
@@ -18,6 +22,14 @@ body {
 .btn-primary {
     background-color: var(--golden-light) !important;
     border: none;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.bg-dark {
+    background-color: #111 !important;
 }
 
 .placeholder {

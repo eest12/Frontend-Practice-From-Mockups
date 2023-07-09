@@ -37,7 +37,7 @@ Array.from(document.getElementsByClassName("form-select")).map(el => {
     el.addEventListener("change", handleSelectChange);
 });
 
-Array.from(document.getElementsByClassName("form-control")).map(el => {
+Array.from(document.getElementsByClassName("date-input")).map(el => {
     el.addEventListener("focus", handleDateInputFocus);
     el.addEventListener("blur", handleDateInputBlur);
 });

@@ -66,14 +66,14 @@
 
                 <!-- Check In Date -->
                 <span class="w-100">
-                    <input class="form-control py-3 fw-light" name="checkIn" placeholder="Check In" type="text"
-                        value="" />
+                    <input class="form-control date-input py-3 fw-light" name="checkIn" placeholder="Check In"
+                        type="text" value="" />
                 </span>
 
                 <!-- Check Out Date -->
                 <span class="w-100">
-                    <input class="form-control py-3 fw-light" name="checkOut" placeholder="Check Out" type="text"
-                        value="" />
+                    <input class="form-control date-input py-3 fw-light" name="checkOut" placeholder="Check Out"
+                        type="text" value="" />
                 </span>
 
                 <!-- Submit -->
@@ -238,8 +238,38 @@
         </section>
 
         <!-- Contact & Links -->
-        <footer>
+        <footer class="d-flex justify-content-between text-start p-5 bg-dark text-light">
+            <!-- Logo and Contact -->
+            <div>
+                <img class="mb-5" src="assets/logo2.png" />
 
+                <h3 class="fw-bold fs-5 mb-1">Bon Hotels Head Office</h3>
+                <p class="fs-5 lh-sm fw-light">
+                    <a class="link-light" href="tel:+27434344432">+27 434 344 432</a><br />
+                    <a class="link-light" href="mailto:info@bonhotels.com">info@bonhotels.com</a>
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3"><a class="link-light" href="#">Our Hotels</a></li>
+                    <li class="mb-3"><a class="link-light" href="#">Our Conferencing</a></li>
+                    <li class="mb-3"><a class="link-light" href="#">Our Company</a></li>
+                    <li class="mb-3"><a class="link-light" href="#">Hotel Design</a></li>
+                    <li class="mb-3"><a class="link-light" href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe Form -->
+            <div>
+                <h3 class="fs-4 fw-bold mb-3">Subscribe for Offers</h3>
+                <form class="form-group">
+                    <input class="form-control mb-3 p-3 fw-light fs-5" name="email" type="email"
+                        placeholder="Email Address" aria-label="Email address" />
+                    <button class="btn btn-primary w-100 p-3 fs-5" type="submit">Subscribe Now</button>
+                </form>
+            </div>
         </footer>
     </main>
 
