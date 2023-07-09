@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url("assets/jesse-bowser-EkxO-SFU9kc-unsplash.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+img {
+    width: 18vw;
+}
+
+.h1 {
+    font-size: 85px;
+}
+
+.link-primary {
+    color: #09B3B0 !important;
+}
+
+.text-secondary {
+    color: #FF9F00 !important;
+}
+
+.font-amatic {
+    font-family: 'Amatic SC', cursive;
+}
+
+.font-yrsa {
+    font-family: 'Yrsa', serif;
+}
