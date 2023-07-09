@@ -1,6 +1,6 @@
 # Simple Hotel Website
 
-![Simple Hotel Website Screenshot](page-screenshot.jpg)
+![Simple Hotel Website Screenshot](page_screenshot.jpg)
 
 A landing page for a hotel website. Done with Bootstrap.
 
