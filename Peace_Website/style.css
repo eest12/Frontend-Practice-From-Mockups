@@ -1,11 +1,16 @@
+:root {
+    --teal: #09B3B0;
+    --orange: #FF9F00;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
     background-image: url("assets/jesse-bowser-EkxO-SFU9kc-unsplash.png");
-    background-size: cover;
-    height: 100vh;
+    background-size: contain;
+    height: calc(100vw * 0.43); /* 0.43 is bg img height ratio */
 }
 
 img {
@@ -16,12 +21,30 @@ img {
     font-size: 85px;
 }
 
+.btn-primary {
+    background-color: var(--teal);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange);
+}
+
 .link-primary {
-    color: #09B3B0 !important;
+    color: var(--teal) !important;
+}
+
+.link-primary:hover, .link-active {
+    color: var(--orange) !important;
+}
+
+.link-primary:hover span, .link-active span {
+    border-bottom: 2px solid var(--orange);
+    transition: border .1s ease-in-out;
 }
 
 .text-secondary {
-    color: #FF9F00 !important;
+    color: var(--orange) !important;
 }
 
 .font-amatic {
@@ -30,4 +53,8 @@ img {
 
 .font-yrsa {
     font-family: 'Yrsa', serif;
+}
+
+.small-font {
+    font-size: 0.8rem;
 }
