@@ -97,11 +97,64 @@
         }
 
         function Main() {
+            const psychics = [
+                {
+                    id: 1,
+                    name: "Merry Healer",
+                    photo: "psychic1.png",
+                    descBottom: "I can help with all matters of life, such as Love, Health, Happiness, and Career. I will also give you a sense of direction. I am a Life coach. My readings come directly from the heart. I do not sugarcoat, I am nonjudgmental. All of my readings are private and confidential. I will lead you and guide you to your heart's desires.",
+                    rate: 4.99,
+                    phone: "+11111111111",
+                    available: false
+                },
+                {
+                    id: 2,
+                    name: "Superloveadvisor",
+                    photo: "psychic2.png",
+                    descTop: "Improve your life today.",
+                    descBottom: "I'm proud to say that I have guided many clients to their financial breakthrough and overall happiness. I've lead many on the right career path as well as helped them through every difficult time.",
+                    rate: 3.99,
+                    email: "example@domain.com",
+                    available: true
+                },
+                {
+                    id: 3,
+                    name: "Psychic Althea",
+                    photo: "psychic3.png",
+                    descTop: "Keen's Amazing Psychic Astrologer RexFrederick",
+                    descBottom: "Hello Keen clients! My name is Rex! Quick, friendly, fun, and Accurate! Over 60,000 readings here on Keen! Love, Marriage, Finance and Your Well Being! I'm here to serve your every need! Detailed w/Real understanding!",
+                    rate: 5.99,
+                    phone: "+11111111111",
+                    available: true
+                }
+            ];
+
             return (
                 <main>
-                    <h1 className="text-capitalize bg-primary text-light font-yrsa text-center p-4 display-5">
-                        Find your best psychic advisor
-                    </h1>
+                    <section className="container-100 psychic-section">
+                        <h1 className="text-capitalize bg-primary text-light font-yrsa text-center p-4 display-5">
+                            Find your best psychic advisor
+                        </h1>
+
+                        <div className="container mt-5">
+                            {psychics.map((psychic) => (
+                                <div key={psychic.id} className="row">
+                                    <img className="col" src={"assets/" + psychic.photo} />
+                                    <div className="col">
+                                        <h2 className="h2 text-primary fs-5">{psychic.name}</h2>
+                                        <p className="small-font">{psychic.descTop}</p>
+                                        <p className="small-font">{psychic.descBottom}</p>
+                                    </div>
+                                    <div className="col">
+                                        <div className="text-capitalize bg-primary text-light small-font p-1 rounded-start">First 3 minutes free</div>
+                                        <div>${psychic.rate}/min</div>
+                                        <button className={"btn d-block mt-2 w-100" + (psychic.phone ? " btn-secondary link-light" : " btn-light link-primary")}>{psychic.phone ? "Call Now" : "Send Email"}</button>
+                                        <button className="btn d-block mt-2 w-100 btn-primary link-light">Chat {psychic.available ? "Now" : "Later"}</button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
                 </main>
             );
         }

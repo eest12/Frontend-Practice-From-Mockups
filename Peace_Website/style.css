@@ -1,5 +1,6 @@
 :root {
     --teal: #09B3B0;
+    --teal-dark: #008080;
     --orange: #FF9F00;
 }
 
@@ -21,17 +22,20 @@ img {
     font-size: 85px;
 }
 
-.bg-primary {
+.bg-primary, .btn-primary {
     background-color: var(--teal) !important;
 }
 
-.btn-primary {
-    background-color: var(--teal);
+.btn-primary:hover, .btn-secondary {
+    background-color: var(--orange);
+}
+
+.btn-primary, .btn-secondary {
     border: none;
 }
 
-.btn-primary:hover {
-    background-color: var(--orange);
+.btn-light {
+    border-color: var(--teal);
 }
 
 .link-primary {
@@ -45,6 +49,10 @@ img {
 .link-primary:hover span, .link-active span {
     border-bottom: 2px solid var(--orange);
     transition: border .1s ease-in-out;
+}
+
+.text-primary {
+    color: var(--teal-dark) !important;
 }
 
 .text-secondary {
@@ -61,4 +69,11 @@ img {
 
 .small-font {
     font-size: 0.8rem;
+}
+
+.psychic-section {
+    background-image: url("assets/dandelion.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
