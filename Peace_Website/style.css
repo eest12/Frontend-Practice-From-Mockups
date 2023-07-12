@@ -26,7 +26,7 @@ img {
     background-color: var(--teal) !important;
 }
 
-.btn-primary:hover, .btn-secondary {
+.btn-primary:hover, .btn-secondary, .btn-secondary:hover {
     background-color: var(--orange);
 }
 
@@ -34,7 +34,7 @@ img {
     border: none;
 }
 
-.btn-light {
+.btn-light, .btn-light:hover {
     border-color: var(--teal);
 }
 
@@ -42,11 +42,11 @@ img {
     color: var(--teal) !important;
 }
 
-.link-primary:hover, .link-active {
+nav .link-primary:hover, .link-active {
     color: var(--orange) !important;
 }
 
-.link-primary:hover span, .link-active span {
+nav .link-primary:hover span, .link-active span {
     border-bottom: 2px solid var(--orange);
     transition: border .1s ease-in-out;
 }
@@ -69,6 +69,10 @@ img {
 
 .small-font {
     font-size: 0.8rem;
+}
+
+.tiny-font {
+    font-size: 0.6rem;
 }
 
 .psychic-section {

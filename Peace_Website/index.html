@@ -131,25 +131,59 @@
 
             return (
                 <main>
-                    <section className="container-100 psychic-section">
+                    {/* Psychic Advisors */}
+                    <section className="d-grid psychic-section">
                         <h1 className="text-capitalize bg-primary text-light font-yrsa text-center p-4 display-5">
                             Find your best psychic advisor
                         </h1>
 
-                        <div className="container mt-5">
+                        <div className="container w-75 mt-4 px-5">
                             {psychics.map((psychic) => (
-                                <div key={psychic.id} className="row">
-                                    <img className="col" src={"assets/" + psychic.photo} />
-                                    <div className="col">
+                                <div key={psychic.id} className="row mb-4">
+                                    {/* Col 1: Photo */}
+                                    <div className="col-2">
+                                        <img className="w-100" src={"assets/" + psychic.photo} />
+                                    </div>
+
+                                    {/* Col 2: Description */}
+                                    <div className="col-8">
                                         <h2 className="h2 text-primary fs-5">{psychic.name}</h2>
                                         <p className="small-font">{psychic.descTop}</p>
-                                        <p className="small-font">{psychic.descBottom}</p>
+                                        <p className="small-font w-75">{psychic.descBottom}</p>
                                     </div>
+
+                                    {/* Col 3: Contact */}
                                     <div className="col">
-                                        <div className="text-capitalize bg-primary text-light small-font p-1 rounded-start">First 3 minutes free</div>
-                                        <div>${psychic.rate}/min</div>
-                                        <button className={"btn d-block mt-2 w-100" + (psychic.phone ? " btn-secondary link-light" : " btn-light link-primary")}>{psychic.phone ? "Call Now" : "Send Email"}</button>
-                                        <button className="btn d-block mt-2 w-100 btn-primary link-light">Chat {psychic.available ? "Now" : "Later"}</button>
+                                        <div className="text-capitalize bg-primary text-light tiny-font p-1 rounded-start">
+                                            First 3 minutes free
+                                        </div>
+
+                                        <div>
+                                            ${psychic.rate}<span className="small-font">/min</span>
+                                        </div>
+
+                                        <a
+                                            className={"btn d-block mt-2 w-100 small-font" + (psychic.phone ? " btn-secondary link-light" : " btn-light link-primary")}
+                                            href={(psychic.phone ? "tel:" + psychic.phone : "mailto:" + psychic.email)}
+                                            role="button"
+                                        >
+                                            {psychic.phone ?
+                                                <svg width="12" height="12" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.68 11.91 13.08 11.82 13.43 11.94C14.55 12.31 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.39 0 1C0 0.45 0.45 0 1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79Z" fill="white" />
+                                                </svg> :
+                                                <svg width="16" height="12" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="#09B3B0" />
+                                                </svg>
+                                            }
+                                            <span className="ms-2">{psychic.phone ? "Call Now" : "Send Mail"}</span>
+                                        </a>
+
+                                        <button className="btn d-block mt-2 w-100 small-font btn-primary link-light">
+                                            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM4 7H16V9H4V7ZM12 12H4V10H12V12ZM16 6H4V4H16V6Z" fill="white" />
+                                            </svg>
+                                            <span className="ms-2">Chat {psychic.available ? "Now" : "Later"}</span>
+                                        </button>
                                     </div>
                                 </div>
                             ))}
