@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Frontend Practice From Mockups</title>
-</head>
 
-<body style="background-color: black;
+    <style>
+        body {
+            background-color: black;
             color: white;
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
@@ -15,16 +16,32 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;">
-    <header style="margin: 50px;">
+            justify-content: space-between;
+        }
+        header {
+            margin: 50px;
+        }
+        main {
+            flex: 1;
+        }
+        a {
+            color: #e9bbbb;
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
         <h1>Frontend Practice From Mockups</h1>
     </header>
 
-    <main style="flex: 1;">
+    <main>
         <section>
             <nav>
-                <a href="Simple_Hotel_Website/index.html" style="color: #e9bbbb;">Simple Hotel Website</a>
-                <a href="Peace_Website/index.html" style="color: #e9bbbb;">Peace Website</a>
+                <a href="Simple_Hotel_Website/index.html">Simple Hotel Website</a>
+                <a href="Peace_Website/index.html">Peace Website</a>
             </nav>
         </section>
     </main>
