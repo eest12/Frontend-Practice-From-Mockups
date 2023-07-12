@@ -85,9 +85,12 @@ nav .link-primary:hover span, .link-active span {
 
 .psychic-section {
     background-image: url("assets/dandelion.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .merits-section {
