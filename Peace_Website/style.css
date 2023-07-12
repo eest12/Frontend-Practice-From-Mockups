@@ -1,4 +1,6 @@
 :root {
+    --black: #09292F;
+    --off-white: #EDF8F9;
     --teal: #09B3B0;
     --teal-dark: #008080;
     --orange: #FF9F00;
@@ -6,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--black);
 }
 
 header {
@@ -40,6 +43,7 @@ img {
 
 .link-primary {
     color: var(--teal) !important;
+    text-decoration: none;
 }
 
 nav .link-primary:hover, .link-active {
@@ -52,7 +56,11 @@ nav .link-primary:hover span, .link-active span {
 }
 
 .text-primary {
-    color: var(--teal-dark) !important;
+    color: var(--teal) !important;
+}
+
+.text-primary-dark {
+    color: var(--teal-dark);
 }
 
 .text-secondary {
@@ -80,4 +88,8 @@ nav .link-primary:hover span, .link-active span {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.merits-section {
+    background-color: var(--off-white);
 }
