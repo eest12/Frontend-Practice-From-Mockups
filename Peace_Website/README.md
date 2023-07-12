@@ -1,6 +1,6 @@
 # Peace Website
 
-[Simple Hotel Website Live](https://eest12.github.io/Frontend-Practice-From-Mockups/Peace_Website/)
+[Peace Website Live](https://eest12.github.io/Frontend-Practice-From-Mockups/Peace_Website/)
 
 A landing page for a psychic advisor website.
 
