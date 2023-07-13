@@ -14,7 +14,8 @@ body {
 header {
     background-image: url("assets/jesse-bowser-EkxO-SFU9kc-unsplash.png");
     background-size: cover;
-    height: calc(100vw * 0.43); /* 0.43 is bg img height ratio */
+    height: calc(100vw * 0.43);
+    /* 0.43 is bg img height ratio */
 }
 
 img {
@@ -25,46 +26,57 @@ img {
     font-size: 85px;
 }
 
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
     background-color: var(--teal) !important;
 }
 
-.btn-primary:hover, .btn-secondary, .btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary,
+.btn-secondary:hover {
     background-color: var(--orange);
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     border: none;
 }
 
-.btn-light, .btn-light:hover {
+.btn-light,
+.btn-light:hover,
+.btn-transparent {
     border-color: var(--teal);
 }
 
+.text-primary,
 .link-primary {
     color: var(--teal) !important;
-    text-decoration: none;
 }
 
-nav .link-primary:hover, .link-active {
-    color: var(--orange) !important;
-}
-
-nav .link-primary:hover span, .link-active span {
-    border-bottom: 2px solid var(--orange);
-    transition: border .1s ease-in-out;
-}
-
-.text-primary {
-    color: var(--teal) !important;
-}
-
-.text-primary-dark {
+.text-primary-dark,
+.link-primary-dark,
+.link-primary-dark:hover {
     color: var(--teal-dark);
 }
 
 .text-secondary {
     color: var(--orange) !important;
+}
+
+.link-primary,
+.link-primary-dark {
+    text-decoration: none;
+}
+
+nav .link-primary:hover,
+.link-active {
+    color: var(--orange) !important;
+}
+
+nav .link-primary:hover span,
+.link-active span {
+    border-bottom: 2px solid var(--orange);
+    transition: border .1s ease-in-out;
 }
 
 .font-amatic {
@@ -89,10 +101,25 @@ nav .link-primary:hover span, .link-active span {
     background-position: bottom right;
 }
 
+.merits-section {
+    background-color: var(--off-white);
+}
+
+.faq-section {
+    background-image: url("assets/water.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
 .overlay {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.merits-section {
-    background-color: var(--off-white);
+.overlay-darker {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.faq-list {
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
 }
