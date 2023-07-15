@@ -18,7 +18,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto&family=Yrsa&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo&family=Amatic+SC:wght@700&family=Montserrat&family=Roboto&family=Yrsa&display=swap"
         rel="stylesheet">
 
     <!-- Custom Style -->
@@ -314,11 +315,11 @@
             return (
                 <div className="container w-75 px-5 pb-5">
                     <h1 className="text-capitalize fs-3 font-yrsa text-center py-3">Love, relationship, and life FAQs</h1>
-                    
+
                     <p className="small-font">You've finally decided to take the leap and talk to a psychic (great!), but perhaps you're still feeling a bit confused about online readings, whether or not they are safe, or how to choose the best Keen psychic to meet your needs. We're here to put your mind at ease so that you can get the most out of your reading - every single time.</p>
-                    
+
                     <FaqList questions={questions} />
-                    
+
                     <div className="text-center">
                         <button className="btn btn-transparent link-primary small-font px-3 py-2">Readings 101</button>
                     </div>
@@ -349,8 +350,50 @@
         }
 
         function Footer() {
+            const linksText = [
+                "Privacy Policy",
+                "Terms and Conditions",
+                "Contact Us"
+            ];
+
+            const links = linksText.map(
+                (linkText, i) => ({
+                    id: i,
+                    text: linkText
+                })
+            );
+            
             return (
-                <footer></footer>
+                <footer className="d-flex bg-primary text-light small-font p-5">
+                    {/* Left Column */}
+                    <div className="ms-5">
+                        {/* Logo */}
+                        <div className="d-flex align-items-center">
+                            <img className="me-3" src="assets/logo2.png" />
+                            <div>
+                                <h1 className="font-aleo fs-5 mb-0">Private Oracle</h1>
+                                <span>www.privateoracle.com</span>
+                            </div>
+                        </div>
+
+                        {/* Copyright */}
+                        <div className="mb-5">Copyright &copy; 2021 &bull; Private Oracle &bull;</div>
+
+                        {/* Links */}
+                        <ul className="text-uppercase list-unstyled">
+                            {links.map((link) => (
+                                <li key={link.id} className="list-inline-item me-4">
+                                    <a className="link-light" href="#">
+                                        {link.text}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Copyright */}
+
+                </footer>
             );
         }
 

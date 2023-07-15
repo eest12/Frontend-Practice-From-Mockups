@@ -18,8 +18,12 @@ header {
     /* 0.43 is bg img height ratio */
 }
 
-img {
+header img {
     width: 18vw;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .h1 {
@@ -64,7 +68,8 @@ img {
 }
 
 .link-primary,
-.link-primary-dark {
+.link-primary-dark,
+.link-light {
     text-decoration: none;
 }
 
@@ -85,6 +90,10 @@ nav .link-primary:hover span,
 
 .font-yrsa {
     font-family: 'Yrsa', serif;
+}
+
+.font-aleo {
+    font-family: 'Aleo', serif;
 }
 
 .small-font {
