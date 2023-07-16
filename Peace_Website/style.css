@@ -12,18 +12,20 @@ body {
 }
 
 header {
-    background-image: url("assets/jesse-bowser-EkxO-SFU9kc-unsplash.png");
-    background-size: cover;
-    height: calc(100vw * 0.43);
-    /* 0.43 is bg img height ratio */
-}
-
-header img {
-    width: 18vw;
+    /* 0.425 is approx. carousel image height ratio */
+    height: calc(100vw * 0.425);
 }
 
 footer {
     font-family: 'Montserrat', sans-serif;
+}
+
+.carousel {
+    z-index: -1;
+}
+
+.header-logo {
+    width: 18vw;
 }
 
 .h1 {

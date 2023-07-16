@@ -76,6 +76,20 @@
             );
         }
 
+        function Carousel({ images }) {
+            return (
+                <div className="carousel slide carousel-fade position-absolute top-0 start-0" data-bs-ride="carousel" data-bs-pause="false">
+                    <div className="carousel-inner">
+                        {images.map((item, i) => (
+                            <div className={"carousel-item" + (i == 0 ? " active" : "")}>
+                                <img className="d-block w-100" src={"assets/" + item.image} alt={item.alt} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
         function Header() {
             const navLinksText = [
                 "Home",
@@ -86,11 +100,32 @@
 
             const navLinks = objectifyStringArray(navLinksText);
 
+            const carouselImgs = [
+                {
+                    id: 1,
+                    image: "jesse-bowser-EkxO-SFU9kc-unsplash.png",
+                    alt: "woman sitting on rock high in the mountains"
+                },
+                {
+                    id: 2,
+                    image: "aditya-saxena-_mIXHvl_wzA-unsplash.jpg",
+                    alt: "woman freely waving a scarf outdoors"
+                },
+                {
+                    id: 3,
+                    image: "radu-florin-CwTBt6jyagQ-unsplash.png",
+                    alt: "woman enjoying the sunshine"
+                }
+            ];
+
             return (
                 <header className="container-fluid pt-3">
+                    {/* Background Carousel */}
+                    <Carousel images={carouselImgs} />
+
                     {/* Logo and Navigation */}
                     <div className="container d-flex justify-content-between align-items-start">
-                        <img src="assets/logo1.png" />
+                        <img className="header-logo" src="assets/logo1.png" />
                         <Nav navLinks={navLinks} currentPage="Home" />
                     </div>
 
