@@ -2,7 +2,7 @@
 
 [Peace Website Live](https://eest12.github.io/Frontend-Practice-From-Mockups/Peace_Website/)
 
-A landing page for a psychic advisor website.
+A landing page for a psychic advisor website. Made with React and Bootstrap.
 
 ## UI Mockup
 
