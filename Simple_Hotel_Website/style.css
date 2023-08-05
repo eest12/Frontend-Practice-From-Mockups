@@ -59,13 +59,3 @@ a {
 .gradient {
     background: linear-gradient(0deg, rgba(0,0,0,1), rgba(154, 154, 154, 0.4) 35%, rgba(0,0,0,0));
 }
-
-/* -------------------------------- */
-/*                                  */
-/*            Responsive            */
-/*                                  */
-/* -------------------------------- */
-
-@media screen and (max-width:992px) {
-
-}
