@@ -30,6 +30,7 @@ footer {
 
 .header-container {
     top: 170px;
+    left: 5vw;
 }
 
 .header-container p {
@@ -185,7 +186,7 @@ nav .link-primary:hover span,
 
 @media screen and (max-width:992px) {
     .header-container {
-        top: 130px;
+        top: 110px;
     }
 
     .header-container p:first-of-type {
@@ -197,6 +198,42 @@ nav .link-primary:hover span,
     }
 
     .h1 {
-        font-size: 430%;
+        font-size: 420%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-container {
+        top: 80px;
+    }
+
+    .header-container p:first-of-type {
+        font-size: 70%;
+    }
+
+    .header-container p:last-of-type {
+        font-size: 160%;
+    }
+
+    .h1 {
+        font-size: 320%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header-container {
+        top: 80px;
+    }
+
+    .header-container p:first-of-type {
+        font-size: 50%;
+    }
+
+    .header-container p:last-of-type {
+        font-size: 120%;
+    }
+
+    .h1 {
+        font-size: 250%;
     }
 }
