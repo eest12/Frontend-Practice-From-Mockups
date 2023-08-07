@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    /* 0.425 is approx. carousel image height ratio */
-    height: calc(100vw * 0.425);
+    /* 0.42 is approx. carousel image height ratio */
+    height: calc(100vw * 0.42);
 }
 
 footer {
@@ -28,8 +28,24 @@ footer {
     width: 18vw;
 }
 
+.header-container {
+    top: 170px;
+}
+
+.header-container p {
+    letter-spacing: 1.5px;
+}
+
+.header-container p:first-of-type {
+    font-size: 130%;
+}
+
+.header-container p:last-of-type {
+    font-size: 280%;
+}
+
 .h1 {
-    font-size: 85px;
+    font-size: 550%;
 }
 
 .bg-primary,
@@ -67,6 +83,10 @@ footer {
 
 .text-secondary {
     color: var(--orange) !important;
+}
+
+.link-light {
+    color: white !important;
 }
 
 .link-primary,
@@ -133,4 +153,50 @@ nav .link-primary:hover span,
 .faq-list {
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
+}
+
+/* -------------------------------- */
+/*                                  */
+/*            Responsive            */
+/*                                  */
+/* -------------------------------- */
+
+@media screen and (max-width:1200px) {
+    .header-container {
+        top: 150px;
+    }
+
+    .header-container p {
+        letter-spacing: 1px;
+    }
+
+    .header-container p:first-of-type {
+        font-size: 110%;
+    }
+
+    .header-container p:last-of-type {
+        font-size: 230%;
+    }
+
+    .h1 {
+        font-size: 500%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header-container {
+        top: 130px;
+    }
+
+    .header-container p:first-of-type {
+        font-size: 100%;
+    }
+
+    .header-container p:last-of-type {
+        font-size: 210%;
+    }
+
+    .h1 {
+        font-size: 430%;
+    }
 }
